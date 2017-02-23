@@ -1,4 +1,4 @@
-div#feedback-choice p.incorrect.feedback.choice
+
 <h1>Question <%= @current + 1 %> of <%= @total %></h1>
 <p id="question">
   <%= @question[:text] %>
@@ -29,7 +29,7 @@ div#feedback-choice p.incorrect.feedback.choice
     <div class="center">
       <%= submit_tag('Continue', :class => 'submit') %>
     </div>
-<% end %>)
+<% end %>
 <% content_for(:title) do%>
     Question <%= @current + 1 %> of <%= @total %>
 <%end%>
